@@ -128,6 +128,7 @@ jobs:
 
     # Format of test results. Supported options:
     #   dart-json
+    #   dotnet-nunit
     #   dotnet-trx
     #   flutter-json
     #   java-junit
