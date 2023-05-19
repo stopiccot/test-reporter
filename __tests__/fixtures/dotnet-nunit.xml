@@ -1,110 +1,762 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<test-run id="0" runstate="Runnable" testcasecount="9" result="Failed" total="9" passed="3" failed="5" inconclusive="0" skipped="1" asserts="5" engine-version="3.12.0.0" clr-version="3.1.16" start-time="2021-06-28 20:23:41Z" end-time="2021-06-28 20:23:41Z" duration="0.230308">
-  <command-line><![CDATA[C:\Users\Michal\.dotnet\tools\.store\nunit.consolerunner.netcore\3.12.0-beta2\nunit.consolerunner.netcore\3.12.0-beta2\tools\netcoreapp3.1\any\nunit3-console.dll reports/dotnet/DotnetTests.NUnitV3Tests/bin/Debug/netcoreapp3.1/DotnetTests.NUnitV3Tests.dll --result=__tests__/fixtures/dotnet-nunit.xml]]></command-line>
-  <test-suite type="Assembly" id="1-1011" name="DotnetTests.NUnitV3Tests.dll" fullname="C:/Users/Michal/Workspace/dorny/test-reporter/reports/dotnet/DotnetTests.NUnitV3Tests/bin/Debug/netcoreapp3.1/DotnetTests.NUnitV3Tests.dll" runstate="Runnable" testcasecount="9" result="Failed" site="Child" start-time="2021-06-28T20:23:41.4594179Z" end-time="2021-06-28T20:23:41.5420313Z" duration="0.082553" total="9" passed="3" failed="5" warnings="0" inconclusive="0" skipped="1" asserts="5">
-    <environment framework-version="3.13.2.0" clr-version="3.1.16" os-version="Microsoft Windows 10.0.19041" platform="Win32NT" cwd="C:\Users\Michal\Workspace\dorny\test-reporter" machine-name="DORNY-PC" user="Michal" user-domain="DORNY-PC" culture="sk-SK" uiculture="en-US" os-architecture="x64" />
-    <settings>
-      <setting name="DisposeRunners" value="True" />
-      <setting name="WorkDirectory" value="C:\Users\Michal\Workspace\dorny\test-reporter" />
-      <setting name="NumberOfTestWorkers" value="4" />
-    </settings>
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="47" result="Passed" total="47" passed="47" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:25Z" duration="1.3086066">
+  <test-suite type="TestSuite" id="1000" name="TripledotPlatform" fullname="TripledotPlatform" runstate="Runnable" testcasecount="178" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:25Z" duration="1.308607" total="47" passed="47" failed="0" inconclusive="0" skipped="0" asserts="0">
     <properties>
-      <property name="_PID" value="30996" />
-      <property name="_APPDOMAIN" value="nunit3-console" />
+      <property name="isRoot" value="True" />
     </properties>
-    <failure>
-      <message><![CDATA[One or more child tests had errors]]></message>
-    </failure>
-    <test-suite type="TestSuite" id="1-1012" name="DotnetTests" fullname="DotnetTests" runstate="Runnable" testcasecount="9" result="Failed" site="Child" start-time="2021-06-28T20:23:41.4647482Z" end-time="2021-06-28T20:23:41.5420271Z" duration="0.077277" total="9" passed="3" failed="5" warnings="0" inconclusive="0" skipped="1" asserts="5">
-      <failure>
-        <message><![CDATA[One or more child tests had errors]]></message>
-      </failure>
-      <test-suite type="TestSuite" id="1-1013" name="XUnitTests" fullname="DotnetTests.XUnitTests" runstate="Runnable" testcasecount="9" result="Failed" site="Child" start-time="2021-06-28T20:23:41.4649710Z" end-time="2021-06-28T20:23:41.5420231Z" duration="0.077053" total="9" passed="3" failed="5" warnings="0" inconclusive="0" skipped="1" asserts="5">
-        <failure>
-          <message><![CDATA[One or more child tests had errors]]></message>
-        </failure>
-        <test-suite type="TestFixture" id="1-1000" name="CalculatorTests" fullname="DotnetTests.XUnitTests.CalculatorTests" classname="DotnetTests.XUnitTests.CalculatorTests" runstate="Runnable" testcasecount="9" result="Failed" site="Child" start-time="2021-06-28T20:23:41.4661195Z" end-time="2021-06-28T20:23:41.5420143Z" duration="0.075896" total="9" passed="3" failed="5" warnings="0" inconclusive="0" skipped="1" asserts="5">
-          <failure>
-            <message><![CDATA[One or more child tests had errors]]></message>
-          </failure>
-          <test-case id="1-1004" name="Exception_In_TargetTest" fullname="DotnetTests.XUnitTests.CalculatorTests.Exception_In_TargetTest" methodname="Exception_In_TargetTest" classname="DotnetTests.XUnitTests.CalculatorTests" runstate="Runnable" seed="2033520428" result="Failed" label="Error" start-time="2021-06-28T20:23:41.4684284Z" end-time="2021-06-28T20:23:41.4911288Z" duration="0.022805" asserts="0">
-            <failure>
-              <message><![CDATA[System.DivideByZeroException : Attempted to divide by zero.]]></message>
-              <stack-trace><![CDATA[   at DotnetTests.Unit.Calculator.Div(Int32 a, Int32 b) in C:\Users\Michal\Workspace\dorny\test-reporter\reports\dotnet\DotnetTests.Unit\Calculator.cs:line 9
-   at DotnetTests.XUnitTests.CalculatorTests.Exception_In_TargetTest() in C:\Users\Michal\Workspace\dorny\test-reporter\reports\dotnet\DotnetTests.NUnitV3Tests\CalculatorTests.cs:line 33]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="1-1005" name="Exception_In_Test" fullname="DotnetTests.XUnitTests.CalculatorTests.Exception_In_Test" methodname="Exception_In_Test" classname="DotnetTests.XUnitTests.CalculatorTests" runstate="Runnable" seed="145176317" result="Failed" label="Error" start-time="2021-06-28T20:23:41.4930398Z" end-time="2021-06-28T20:23:41.4935666Z" duration="0.000528" asserts="0">
-            <failure>
-              <message><![CDATA[System.Exception : Test]]></message>
-              <stack-trace><![CDATA[   at DotnetTests.XUnitTests.CalculatorTests.Exception_In_Test() in C:\Users\Michal\Workspace\dorny\test-reporter\reports\dotnet\DotnetTests.NUnitV3Tests\CalculatorTests.cs:line 39]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="1-1003" name="Failing_Test" fullname="DotnetTests.XUnitTests.CalculatorTests.Failing_Test" methodname="Failing_Test" classname="DotnetTests.XUnitTests.CalculatorTests" runstate="Runnable" seed="189717168" result="Failed" start-time="2021-06-28T20:23:41.4935910Z" end-time="2021-06-28T20:23:41.5217516Z" duration="0.028162" asserts="1">
-            <failure>
-              <message><![CDATA[  Expected: 3
-  But was:  2
-]]></message>
-              <stack-trace><![CDATA[   at DotnetTests.XUnitTests.CalculatorTests.Failing_Test() in C:\Users\Michal\Workspace\dorny\test-reporter\reports\dotnet\DotnetTests.NUnitV3Tests\CalculatorTests.cs:line 27
-]]></stack-trace>
-            </failure>
-            <assertions>
-              <assertion result="Failed">
-                <message><![CDATA[  Expected: 3
-  But was:  2
-]]></message>
-                <stack-trace><![CDATA[   at DotnetTests.XUnitTests.CalculatorTests.Failing_Test() in C:\Users\Michal\Workspace\dorny\test-reporter\reports\dotnet\DotnetTests.NUnitV3Tests\CalculatorTests.cs:line 27
-]]></stack-trace>
-              </assertion>
-            </assertions>
-          </test-case>
-          <test-suite type="Theory" id="1-1010" name="Is_Even_Number" fullname="DotnetTests.XUnitTests.CalculatorTests.Is_Even_Number" classname="DotnetTests.XUnitTests.CalculatorTests" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2021-06-28T20:23:41.5217837Z" end-time="2021-06-28T20:23:41.5251025Z" duration="0.003318" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="2">
-            <properties>
-              <property name="_JOINTYPE" value="Combinatorial" />
-            </properties>
-            <failure>
-              <message><![CDATA[One or more child tests had errors]]></message>
-            </failure>
-            <test-case id="1-1008" name="Is_Even_Number(2)" fullname="DotnetTests.XUnitTests.CalculatorTests.Is_Even_Number(2)" methodname="Is_Even_Number" classname="DotnetTests.XUnitTests.CalculatorTests" runstate="Runnable" seed="2002556739" result="Passed" start-time="2021-06-28T20:23:41.5222381Z" end-time="2021-06-28T20:23:41.5228607Z" duration="0.000622" asserts="1" />
-            <test-case id="1-1009" name="Is_Even_Number(3)" fullname="DotnetTests.XUnitTests.CalculatorTests.Is_Even_Number(3)" methodname="Is_Even_Number" classname="DotnetTests.XUnitTests.CalculatorTests" runstate="Runnable" seed="1722214143" result="Failed" start-time="2021-06-28T20:23:41.5228803Z" end-time="2021-06-28T20:23:41.5239781Z" duration="0.001098" asserts="1">
-              <failure>
-                <message><![CDATA[  Expected: True
-  But was:  False
-]]></message>
-                <stack-trace><![CDATA[   at DotnetTests.XUnitTests.CalculatorTests.Is_Even_Number(Int32 i) in C:\Users\Michal\Workspace\dorny\test-reporter\reports\dotnet\DotnetTests.NUnitV3Tests\CalculatorTests.cs:line 61
-]]></stack-trace>
-              </failure>
-              <assertions>
-                <assertion result="Failed">
-                  <message><![CDATA[  Expected: True
-  But was:  False
-]]></message>
-                  <stack-trace><![CDATA[   at DotnetTests.XUnitTests.CalculatorTests.Is_Even_Number(Int32 i) in C:\Users\Michal\Workspace\dorny\test-reporter\reports\dotnet\DotnetTests.NUnitV3Tests\CalculatorTests.cs:line 61
-]]></stack-trace>
-                </assertion>
-              </assertions>
-            </test-case>
+    <test-suite type="Assembly" id="1213" name="TripleDotPlatform.Tests.Editor.dll" fullname="/Users/stopiccot/code/tripledot/tripledot-platform/Library/ScriptAssemblies/TripleDotPlatform.Tests.Editor.dll" runstate="Runnable" testcasecount="47" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:25Z" duration="1.273477" total="47" passed="47" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="44532" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="isAssembly" value="True" />
+        <property name="EditorOnly" value="True" />
+        <property name="RequiresPlayMode" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1214" name="TripleDot" fullname="TripleDot" runstate="Runnable" testcasecount="47" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:25Z" duration="1.264339" total="47" passed="47" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1215" name="Tests" fullname="TripleDot.Tests" runstate="Runnable" testcasecount="47" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:25Z" duration="1.262503" total="47" passed="47" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1216" name="Editor" fullname="TripleDot.Tests.Editor" runstate="Runnable" testcasecount="47" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:25Z" duration="1.258697" total="47" passed="47" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1156" name="AppsFlyerAnalyticsTrackerTests" fullname="TripleDot.Tests.Editor.AppsFlyerAnalyticsTrackerTests" classname="TripleDot.Tests.Editor.AppsFlyerAnalyticsTrackerTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.447023" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1160" name="InitEventWhiteList_AllowListContainsDuplicates_InitDoesntContainsDuplicates" fullname="TripleDot.Tests.Editor.AppsFlyerAnalyticsTrackerTests.InitEventWhiteList_AllowListContainsDuplicates_InitDoesntContainsDuplicates" methodname="InitEventWhiteList_AllowListContainsDuplicates_InitDoesntContainsDuplicates" classname="TripleDot.Tests.Editor.AppsFlyerAnalyticsTrackerTests" runstate="Runnable" seed="1610298310" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.320550" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1159" name="InitEventWhiteList_UseAllowAndWhiteLists_InitSuccessFromAllowList" fullname="TripleDot.Tests.Editor.AppsFlyerAnalyticsTrackerTests.InitEventWhiteList_UseAllowAndWhiteLists_InitSuccessFromAllowList" methodname="InitEventWhiteList_UseAllowAndWhiteLists_InitSuccessFromAllowList" classname="TripleDot.Tests.Editor.AppsFlyerAnalyticsTrackerTests" runstate="Runnable" seed="1156050192" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.053113" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1158" name="InitEventWhiteList_UseAllowList_InitSuccess" fullname="TripleDot.Tests.Editor.AppsFlyerAnalyticsTrackerTests.InitEventWhiteList_UseAllowList_InitSuccess" methodname="InitEventWhiteList_UseAllowList_InitSuccess" classname="TripleDot.Tests.Editor.AppsFlyerAnalyticsTrackerTests" runstate="Runnable" seed="1760300103" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.004516" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1157" name="InitEventWhiteList_UseWhiteList_InitSuccess" fullname="TripleDot.Tests.Editor.AppsFlyerAnalyticsTrackerTests.InitEventWhiteList_UseWhiteList_InitSuccess" methodname="InitEventWhiteList_UseWhiteList_InitSuccess" classname="TripleDot.Tests.Editor.AppsFlyerAnalyticsTrackerTests" runstate="Runnable" seed="788518006" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.001492" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1161" name="InitEventWhiteList_WhiteListContainsDuplicates_InitDoesntContainsDuplicates" fullname="TripleDot.Tests.Editor.AppsFlyerAnalyticsTrackerTests.InitEventWhiteList_WhiteListContainsDuplicates_InitDoesntContainsDuplicates" methodname="InitEventWhiteList_WhiteListContainsDuplicates_InitDoesntContainsDuplicates" classname="TripleDot.Tests.Editor.AppsFlyerAnalyticsTrackerTests" runstate="Runnable" seed="878139380" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.001749" asserts="0">
+                <properties />
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1193" name="AssertExceptionTests" fullname="TripleDot.Tests.Editor.AssertExceptionTests" classname="TripleDot.Tests.Editor.AssertExceptionTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.076900" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1200" name="DoesNotThrow_NoExceptions_TestPassed" fullname="TripleDot.Tests.Editor.AssertExceptionTests.DoesNotThrow_NoExceptions_TestPassed" methodname="DoesNotThrow_NoExceptions_TestPassed" classname="TripleDot.Tests.Editor.AssertExceptionTests" runstate="Runnable" seed="1740571230" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.004422" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1199" name="DoesNotThrow_ThrowException_TestFailed" fullname="TripleDot.Tests.Editor.AssertExceptionTests.DoesNotThrow_ThrowException_TestFailed" methodname="DoesNotThrow_ThrowException_TestFailed" classname="TripleDot.Tests.Editor.AssertExceptionTests" runstate="Runnable" seed="381811220" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.031819" asserts="0">
+                <properties />
+                <output><![CDATA[
+IgnoreFailingMessages:true
+Exception: Test exception
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+TripleDot.Tests.TestLogHandler:LogException(Exception, Object) (at Assets/Tests/TestLogHandler.cs:33)
+UnityEngine.Debug:LogException(Exception)
+TripleDot.Tests.Editor.<>c:<DoesNotThrow_ThrowException_TestFailed>b__8_1() (at Assets/Tests/Editor/TestAssertions/AssertExceptionTests.cs:57)
+TripleDot.Tests.LogExceptionAssert:DoesNotThrow(Action) (at Assets/Tests/LogExceptionAssert.cs:29)
+TripleDot.Tests.Editor.<>c:<DoesNotThrow_ThrowException_TestFailed>b__8_0() (at Assets/Tests/Editor/TestAssertions/AssertExceptionTests.cs:57)
+NUnit.Framework.Assert:Throws(IResolveConstraint, TestDelegate, String, Object[])
+NUnit.Framework.Assert:Throws(Type, TestDelegate, String, Object[])
+NUnit.Framework.Assert:Throws(TestDelegate, String, Object[])
+NUnit.Framework.Assert:Throws(TestDelegate)
+TripleDot.Tests.Editor.AssertExceptionTests:DoesNotThrow_ThrowException_TestFailed() (at Assets/Tests/Editor/TestAssertions/AssertExceptionTests.cs:57)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+NUnit.Framework.Internal.Reflect:InvokeMethod(MethodInfo, Object, Object[])
+NUnit.Framework.Internal.MethodWrapper:Invoke(Object, Object[])
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:Execute(ITestExecutionContext)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions() (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorApplication.cs:327)
+
+]]></output>
+              </test-case>
+              <test-case id="1201" name="DoesNotThrow_ThrowExceptionBeforeTest_TestPassed" fullname="TripleDot.Tests.Editor.AssertExceptionTests.DoesNotThrow_ThrowExceptionBeforeTest_TestPassed" methodname="DoesNotThrow_ThrowExceptionBeforeTest_TestPassed" classname="TripleDot.Tests.Editor.AssertExceptionTests" runstate="Runnable" seed="1773165990" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.004817" asserts="0">
+                <properties />
+                <output><![CDATA[
+IgnoreFailingMessages:true
+Exception: Test exception
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+TripleDot.Tests.TestLogHandler:LogException(Exception, Object) (at Assets/Tests/TestLogHandler.cs:33)
+UnityEngine.Debug:LogException(Exception)
+TripleDot.Tests.Editor.AssertExceptionTests:DoesNotThrow_ThrowExceptionBeforeTest_TestPassed() (at Assets/Tests/Editor/TestAssertions/AssertExceptionTests.cs:70)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+NUnit.Framework.Internal.Reflect:InvokeMethod(MethodInfo, Object, Object[])
+NUnit.Framework.Internal.MethodWrapper:Invoke(Object, Object[])
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:Execute(ITestExecutionContext)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions() (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorApplication.cs:327)
+
+]]></output>
+              </test-case>
+              <test-case id="1202" name="DoesNotThrow_UseUnityLogHandler_TestFailed" fullname="TripleDot.Tests.Editor.AssertExceptionTests.DoesNotThrow_UseUnityLogHandler_TestFailed" methodname="DoesNotThrow_UseUnityLogHandler_TestFailed" classname="TripleDot.Tests.Editor.AssertExceptionTests" runstate="Runnable" seed="986503581" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.001525" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1198" name="Throws_NoExceptions_TestFailed" fullname="TripleDot.Tests.Editor.AssertExceptionTests.Throws_NoExceptions_TestFailed" methodname="Throws_NoExceptions_TestFailed" classname="TripleDot.Tests.Editor.AssertExceptionTests" runstate="Runnable" seed="1710223698" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.003770" asserts="0">
+                <properties />
+                <output><![CDATA[
+IgnoreFailingMessages:true
+]]></output>
+              </test-case>
+              <test-case id="1194" name="Throws_ThrowException_TestPassed" fullname="TripleDot.Tests.Editor.AssertExceptionTests.Throws_ThrowException_TestPassed" methodname="Throws_ThrowException_TestPassed" classname="TripleDot.Tests.Editor.AssertExceptionTests" runstate="Runnable" seed="670154550" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.003484" asserts="0">
+                <properties />
+                <output><![CDATA[
+IgnoreFailingMessages:true
+Exception: Test exception
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+TripleDot.Tests.TestLogHandler:LogException(Exception, Object) (at Assets/Tests/TestLogHandler.cs:33)
+UnityEngine.Debug:LogException(Exception)
+TripleDot.Tests.Editor.<>c:<Throws_ThrowException_TestPassed>b__3_0() (at Assets/Tests/Editor/TestAssertions/AssertExceptionTests.cs:21)
+TripleDot.Tests.LogExceptionAssert:Throws(Action) (at Assets/Tests/LogExceptionAssert.cs:17)
+TripleDot.Tests.Editor.AssertExceptionTests:Throws_ThrowException_TestPassed() (at Assets/Tests/Editor/TestAssertions/AssertExceptionTests.cs:21)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+NUnit.Framework.Internal.Reflect:InvokeMethod(MethodInfo, Object, Object[])
+NUnit.Framework.Internal.MethodWrapper:Invoke(Object, Object[])
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:Execute(ITestExecutionContext)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions() (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorApplication.cs:327)
+
+]]></output>
+              </test-case>
+              <test-case id="1195" name="Throws_ThrowExceptionBeforeTest_TestFailed" fullname="TripleDot.Tests.Editor.AssertExceptionTests.Throws_ThrowExceptionBeforeTest_TestFailed" methodname="Throws_ThrowExceptionBeforeTest_TestFailed" classname="TripleDot.Tests.Editor.AssertExceptionTests" runstate="Runnable" seed="1275522172" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.003041" asserts="0">
+                <properties />
+                <output><![CDATA[
+IgnoreFailingMessages:true
+Exception: Test exception
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+TripleDot.Tests.TestLogHandler:LogException(Exception, Object) (at Assets/Tests/TestLogHandler.cs:33)
+UnityEngine.Debug:LogException(Exception)
+TripleDot.Tests.Editor.AssertExceptionTests:Throws_ThrowExceptionBeforeTest_TestFailed() (at Assets/Tests/Editor/TestAssertions/AssertExceptionTests.cs:28)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+NUnit.Framework.Internal.Reflect:InvokeMethod(MethodInfo, Object, Object[])
+NUnit.Framework.Internal.MethodWrapper:Invoke(Object, Object[])
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:Execute(ITestExecutionContext)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions() (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorApplication.cs:327)
+
+]]></output>
+              </test-case>
+              <test-case id="1196" name="Throws_ThrowNonSuitException_TestFailed" fullname="TripleDot.Tests.Editor.AssertExceptionTests.Throws_ThrowNonSuitException_TestFailed" methodname="Throws_ThrowNonSuitException_TestFailed" classname="TripleDot.Tests.Editor.AssertExceptionTests" runstate="Runnable" seed="1487010173" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.003759" asserts="0">
+                <properties />
+                <output><![CDATA[
+IgnoreFailingMessages:true
+Exception: Test exception
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+TripleDot.Tests.TestLogHandler:LogException(Exception, Object) (at Assets/Tests/TestLogHandler.cs:33)
+UnityEngine.Debug:LogException(Exception)
+TripleDot.Tests.Editor.<>c:<Throws_ThrowNonSuitException_TestFailed>b__5_1() (at Assets/Tests/Editor/TestAssertions/AssertExceptionTests.cs:36)
+TripleDot.Tests.LogExceptionAssert:Throws(Action) (at Assets/Tests/LogExceptionAssert.cs:17)
+TripleDot.Tests.Editor.<>c:<Throws_ThrowNonSuitException_TestFailed>b__5_0() (at Assets/Tests/Editor/TestAssertions/AssertExceptionTests.cs:36)
+NUnit.Framework.Assert:Throws(IResolveConstraint, TestDelegate, String, Object[])
+NUnit.Framework.Assert:Throws(Type, TestDelegate, String, Object[])
+NUnit.Framework.Assert:Throws(TestDelegate, String, Object[])
+NUnit.Framework.Assert:Throws(TestDelegate)
+TripleDot.Tests.Editor.AssertExceptionTests:Throws_ThrowNonSuitException_TestFailed() (at Assets/Tests/Editor/TestAssertions/AssertExceptionTests.cs:35)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+NUnit.Framework.Internal.Reflect:InvokeMethod(MethodInfo, Object, Object[])
+NUnit.Framework.Internal.MethodWrapper:Invoke(Object, Object[])
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:Execute(ITestExecutionContext)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions() (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorApplication.cs:327)
+
+]]></output>
+              </test-case>
+              <test-case id="1197" name="Throws_UseUnityLogHandler_TestFailed" fullname="TripleDot.Tests.Editor.AssertExceptionTests.Throws_UseUnityLogHandler_TestFailed" methodname="Throws_UseUnityLogHandler_TestFailed" classname="TripleDot.Tests.Editor.AssertExceptionTests" runstate="Runnable" seed="742373272" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.001394" asserts="0">
+                <properties />
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1162" name="BinaryQueueTests" fullname="TripleDot.Tests.Editor.BinaryQueueTests" classname="TripleDot.Tests.Editor.BinaryQueueTests" runstate="Runnable" testcasecount="15" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:25Z" duration="0.159487" total="15" passed="15" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1163" name="Add1000Events_ElementsCountEquals1000" fullname="TripleDot.Tests.Editor.BinaryQueueTests.Add1000Events_ElementsCountEquals1000" methodname="Add1000Events_ElementsCountEquals1000" classname="TripleDot.Tests.Editor.BinaryQueueTests" runstate="Runnable" seed="2049599679" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.036596" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1173" name="Add100Events_Dequeue50Events_Deserialize50EventsSuccess" fullname="TripleDot.Tests.Editor.BinaryQueueTests.Add100Events_Dequeue50Events_Deserialize50EventsSuccess" methodname="Add100Events_Dequeue50Events_Deserialize50EventsSuccess" classname="TripleDot.Tests.Editor.BinaryQueueTests" runstate="Runnable" seed="782186190" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.008776" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1178" name="Add5Events_QueueBufferSizeExpanded" fullname="TripleDot.Tests.Editor.BinaryQueueTests.Add5Events_QueueBufferSizeExpanded" methodname="Add5Events_QueueBufferSizeExpanded" classname="TripleDot.Tests.Editor.BinaryQueueTests" runstate="Runnable" seed="1418459776" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.009129" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1177" name="Add5Events_ThenDequeue5Events_ThenAdd5Events_QueueRinged" fullname="TripleDot.Tests.Editor.BinaryQueueTests.Add5Events_ThenDequeue5Events_ThenAdd5Events_QueueRinged" methodname="Add5Events_ThenDequeue5Events_ThenAdd5Events_QueueRinged" classname="TripleDot.Tests.Editor.BinaryQueueTests" runstate="Runnable" seed="342049313" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.011283" asserts="0">
+                <properties />
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1172" name="AddNEvents_DequeueMEvents_ElementsCountEqualsDifference" fullname="TripleDot.Tests.Editor.BinaryQueueTests.AddNEvents_DequeueMEvents_ElementsCountEqualsDifference" classname="TripleDot.Tests.Editor.BinaryQueueTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.028468" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1169" name="AddNEvents_DequeueMEvents_ElementsCountEqualsDifference(100,50)" fullname="TripleDot.Tests.Editor.BinaryQueueTests.AddNEvents_DequeueMEvents_ElementsCountEqualsDifference(100,50)" methodname="AddNEvents_DequeueMEvents_ElementsCountEqualsDifference" classname="TripleDot.Tests.Editor.BinaryQueueTests" runstate="Runnable" seed="1282676497" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.006018" asserts="0">
+                  <properties />
+                </test-case>
+                <test-case id="1170" name="AddNEvents_DequeueMEvents_ElementsCountEqualsDifference(1,1)" fullname="TripleDot.Tests.Editor.BinaryQueueTests.AddNEvents_DequeueMEvents_ElementsCountEqualsDifference(1,1)" methodname="AddNEvents_DequeueMEvents_ElementsCountEqualsDifference" classname="TripleDot.Tests.Editor.BinaryQueueTests" runstate="Runnable" seed="232235360" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.003639" asserts="0">
+                  <properties />
+                </test-case>
+                <test-case id="1171" name="AddNEvents_DequeueMEvents_ElementsCountEqualsDifference(10,0)" fullname="TripleDot.Tests.Editor.BinaryQueueTests.AddNEvents_DequeueMEvents_ElementsCountEqualsDifference(10,0)" methodname="AddNEvents_DequeueMEvents_ElementsCountEqualsDifference" classname="TripleDot.Tests.Editor.BinaryQueueTests" runstate="Runnable" seed="961510403" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.005666" asserts="0">
+                  <properties />
+                </test-case>
+              </test-suite>
+              <test-case id="1164" name="CheckDefaultDataSize" fullname="TripleDot.Tests.Editor.BinaryQueueTests.CheckDefaultDataSize" methodname="CheckDefaultDataSize" classname="TripleDot.Tests.Editor.BinaryQueueTests" runstate="Runnable" seed="1854591339" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:24Z" duration="0.002938" asserts="0">
+                <properties />
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1168" name="DequeueMoreThanHave_ThrowsException" fullname="TripleDot.Tests.Editor.BinaryQueueTests.DequeueMoreThanHave_ThrowsException" classname="TripleDot.Tests.Editor.BinaryQueueTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2023-05-19 10:51:24Z" end-time="2023-05-19 10:51:25Z" duration="0.025539" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1166" name="DequeueMoreThanHave_ThrowsException(0)" fullname="TripleDot.Tests.Editor.BinaryQueueTests.DequeueMoreThanHave_ThrowsException(0)" methodname="DequeueMoreThanHave_ThrowsException" classname="TripleDot.Tests.Editor.BinaryQueueTests" runstate="Runnable" seed="1655928649" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.004387" asserts="0">
+                  <properties />
+                </test-case>
+                <test-case id="1167" name="DequeueMoreThanHave_ThrowsException(15)" fullname="TripleDot.Tests.Editor.BinaryQueueTests.DequeueMoreThanHave_ThrowsException(15)" methodname="DequeueMoreThanHave_ThrowsException" classname="TripleDot.Tests.Editor.BinaryQueueTests" runstate="Runnable" seed="398228161" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.008180" asserts="0">
+                  <properties />
+                </test-case>
+              </test-suite>
+              <test-case id="1176" name="DequeueNegativeNumber_ThrowsException" fullname="TripleDot.Tests.Editor.BinaryQueueTests.DequeueNegativeNumber_ThrowsException" methodname="DequeueNegativeNumber_ThrowsException" classname="TripleDot.Tests.Editor.BinaryQueueTests" runstate="Runnable" seed="695159994" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.003465" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1165" name="DeserializeEmptyQueue_DoesNotThrow" fullname="TripleDot.Tests.Editor.BinaryQueueTests.DeserializeEmptyQueue_DoesNotThrow" methodname="DeserializeEmptyQueue_DoesNotThrow" classname="TripleDot.Tests.Editor.BinaryQueueTests" runstate="Runnable" seed="1126015339" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.002991" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1179" name="LastRingedElementCloseToFirstElement_AddBigEvent_QueueUnringed" fullname="TripleDot.Tests.Editor.BinaryQueueTests.LastRingedElementCloseToFirstElement_AddBigEvent_QueueUnringed" methodname="LastRingedElementCloseToFirstElement_AddBigEvent_QueueUnringed" classname="TripleDot.Tests.Editor.BinaryQueueTests" runstate="Runnable" seed="798080730" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.008890" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1175" name="RingQueue_DequeueAllEvents_QueueIsUnringed" fullname="TripleDot.Tests.Editor.BinaryQueueTests.RingQueue_DequeueAllEvents_QueueIsUnringed" methodname="RingQueue_DequeueAllEvents_QueueIsUnringed" classname="TripleDot.Tests.Editor.BinaryQueueTests" runstate="Runnable" seed="870471308" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.004487" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1174" name="RingQueue_DequeueEvents_DeserializeSuccess" fullname="TripleDot.Tests.Editor.BinaryQueueTests.RingQueue_DequeueEvents_DeserializeSuccess" methodname="RingQueue_DequeueEvents_DeserializeSuccess" classname="TripleDot.Tests.Editor.BinaryQueueTests" runstate="Runnable" seed="1224625103" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.004054" asserts="0">
+                <properties />
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1203" name="DictionaryExTests" fullname="TripleDot.Tests.Editor.DictionaryExTests" classname="TripleDot.Tests.Editor.DictionaryExTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.015034" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1204" name="Merge_ToDictIsNull_ReturnFromDict" fullname="TripleDot.Tests.Editor.DictionaryExTests.Merge_ToDictIsNull_ReturnFromDict" methodname="Merge_ToDictIsNull_ReturnFromDict" classname="TripleDot.Tests.Editor.DictionaryExTests" runstate="Runnable" seed="823937797" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.001453" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1205" name="MergeTwoDictionary_SuccessfullyMerged" fullname="TripleDot.Tests.Editor.DictionaryExTests.MergeTwoDictionary_SuccessfullyMerged" methodname="MergeTwoDictionary_SuccessfullyMerged" classname="TripleDot.Tests.Editor.DictionaryExTests" runstate="Runnable" seed="1694539225" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.001494" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1206" name="MergeTwoDictionary_ValuesCollide_FromOverridesTo" fullname="TripleDot.Tests.Editor.DictionaryExTests.MergeTwoDictionary_ValuesCollide_FromOverridesTo" methodname="MergeTwoDictionary_ValuesCollide_FromOverridesTo" classname="TripleDot.Tests.Editor.DictionaryExTests" runstate="Runnable" seed="312699639" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.001247" asserts="0">
+                <properties />
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1187" name="JsonTests" fullname="TripleDot.Tests.Editor.JsonTests" classname="TripleDot.Tests.Editor.JsonTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.210404" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1192" name="DeserializeJsonWithAdditionalData_DataSavedToAdditionalDataProperty" fullname="TripleDot.Tests.Editor.JsonTests.DeserializeJsonWithAdditionalData_DataSavedToAdditionalDataProperty" methodname="DeserializeJsonWithAdditionalData_DataSavedToAdditionalDataProperty" classname="TripleDot.Tests.Editor.JsonTests" runstate="Runnable" seed="1755503621" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.180068" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1191" name="DeserializeWithDefaultValue_CorrectJson_DeserializedJsonReturned" fullname="TripleDot.Tests.Editor.JsonTests.DeserializeWithDefaultValue_CorrectJson_DeserializedJsonReturned" methodname="DeserializeWithDefaultValue_CorrectJson_DeserializedJsonReturned" classname="TripleDot.Tests.Editor.JsonTests" runstate="Runnable" seed="2073789555" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.003227" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1189" name="DeserializeWithDefaultValue_DefaultValueReturned" fullname="TripleDot.Tests.Editor.JsonTests.DeserializeWithDefaultValue_DefaultValueReturned" methodname="DeserializeWithDefaultValue_DefaultValueReturned" classname="TripleDot.Tests.Editor.JsonTests" runstate="Runnable" seed="2122279766" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.000394" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1188" name="DeserializeWithDefaultValue_ExplicitDefaultValueReturned" fullname="TripleDot.Tests.Editor.JsonTests.DeserializeWithDefaultValue_ExplicitDefaultValueReturned" methodname="DeserializeWithDefaultValue_ExplicitDefaultValueReturned" classname="TripleDot.Tests.Editor.JsonTests" runstate="Runnable" seed="870800520" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.000276" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1190" name="DeserializeWithDefaultValue_WrongJson_DefaultValueReturned" fullname="TripleDot.Tests.Editor.JsonTests.DeserializeWithDefaultValue_WrongJson_DefaultValueReturned" methodname="DeserializeWithDefaultValue_WrongJson_DefaultValueReturned" classname="TripleDot.Tests.Editor.JsonTests" runstate="Runnable" seed="2105355013" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.014154" asserts="0">
+                <properties />
+                <output><![CDATA[
+IgnoreFailingMessages:true
+[TDSSDK] Failed to deserialize json string {f
+JsonReaderException: Unexpected character encountered while parsing value: {. Path '', line 1, position 1.
+Newtonsoft.Json.JsonTextReader.ReadStringValue (Newtonsoft.Json.ReadType readType) (at /root/repo/Src/Newtonsoft.Json/JsonTextReader.cs:718)
+Newtonsoft.Json.JsonTextReader.ReadAsString () (at /root/repo/Src/Newtonsoft.Json/JsonTextReader.cs:490)
+Newtonsoft.Json.JsonReader.ReadForType (Newtonsoft.Json.Serialization.JsonContract contract, System.Boolean hasConverter) (at /root/repo/Src/Newtonsoft.Json/JsonReader.cs:1221)
+Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize (Newtonsoft.Json.JsonReader reader, System.Type objectType, System.Boolean checkAdditionalContent) (at /root/repo/Src/Newtonsoft.Json/Serialization/JsonSerializerInternalReader.cs:202)
+Newtonsoft.Json.JsonSerializer.DeserializeInternal (Newtonsoft.Json.JsonReader reader, System.Type objectType) (at /root/repo/Src/Newtonsoft.Json/JsonSerializer.cs:904)
+Newtonsoft.Json.JsonSerializer.Deserialize (Newtonsoft.Json.JsonReader reader, System.Type objectType) (at /root/repo/Src/Newtonsoft.Json/JsonSerializer.cs:883)
+Newtonsoft.Json.JsonConvert.DeserializeObject (System.String value, System.Type type, Newtonsoft.Json.JsonSerializerSettings settings) (at /root/repo/Src/Newtonsoft.Json/JsonConvert.cs:831)
+Newtonsoft.Json.JsonConvert.DeserializeObject[T] (System.String value, Newtonsoft.Json.JsonSerializerSettings settings) (at /root/repo/Src/Newtonsoft.Json/JsonConvert.cs:787)
+Newtonsoft.Json.JsonConvert.DeserializeObject[T] (System.String value) (at /root/repo/Src/Newtonsoft.Json/JsonConvert.cs:720)
+TripleDot.JSON.Deserialize[T] (System.String json) (at Assets/Package/Scripts/Utils/JSON.cs:21)
+TripleDot.JSON.DeserializeWithExplicitDefaultValue[T] (System.String json, T defaultValue) (at Assets/Package/Scripts/Utils/JSON.cs:27)
+UnityEngine.Debug:LogException(Exception)
+TripleDot.JSON:DeserializeWithExplicitDefaultValue(String, String) (at Assets/Package/Scripts/Utils/JSON.cs:31)
+TripleDot.Tests.Editor.JsonTests:DeserializeWithDefaultValue_WrongJson_DefaultValueReturned() (at Assets/Tests/Editor/Json/JsonTests.cs:29)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+NUnit.Framework.Internal.Reflect:InvokeMethod(MethodInfo, Object, Object[])
+NUnit.Framework.Internal.MethodWrapper:Invoke(Object, Object[])
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:Execute(ITestExecutionContext)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions() (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorApplication.cs:327)
+
+]]></output>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1207" name="SafeInvokeTests" fullname="TripleDot.Tests.Editor.SafeInvokeTests" classname="TripleDot.Tests.Editor.SafeInvokeTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.095086" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1208" name="InvokeAction_ThrowException" fullname="TripleDot.Tests.Editor.SafeInvokeTests.InvokeAction_ThrowException" methodname="InvokeAction_ThrowException" classname="TripleDot.Tests.Editor.SafeInvokeTests" runstate="Runnable" seed="4176072" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.006217" asserts="0">
+                <properties />
+                <output><![CDATA[Safe method invoked
+]]></output>
+              </test-case>
+              <test-case id="1209" name="SafeInvokeAction_AllMethodsCalledInRightOrder" fullname="TripleDot.Tests.Editor.SafeInvokeTests.SafeInvokeAction_AllMethodsCalledInRightOrder" methodname="SafeInvokeAction_AllMethodsCalledInRightOrder" classname="TripleDot.Tests.Editor.SafeInvokeTests" runstate="Runnable" seed="1117301403" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.021507" asserts="0">
+                <properties />
+                <output><![CDATA[Safe method invoked
+Exception: Dangerous method invoked
+TripleDot.Tests.Editor.SafeInvokeTests.DangerousMethod (System.Int32 value) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:90)
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+Rethrow as TargetInvocationException: Exception has been thrown by the target of an invocation.
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.MulticastDelegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvoke (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+TripleDot.ActionExtensions.SafeInvoke[T] (System.Action`1[T] action, T param) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:12)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+TripleDot.Tests.TestLogHandler:LogException(Exception, Object) (at Assets/Tests/TestLogHandler.cs:33)
+UnityEngine.Debug:LogException(Exception)
+TripleDot.ActionExtensions:SafeInvoke(Action`1, Int32) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:14)
+TripleDot.Tests.Editor.TestClassWithAction:SafeInvokeAction(Int32) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:17)
+TripleDot.Tests.Editor.SafeInvokeTests:SafeInvokeAction_AllMethodsCalledInRightOrder() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:55)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+NUnit.Framework.Internal.Reflect:InvokeMethod(MethodInfo, Object, Object[])
+NUnit.Framework.Internal.MethodWrapper:Invoke(Object, Object[])
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:Execute(ITestExecutionContext)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions() (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorApplication.cs:327)
+
+Safe method after dangerous invoked
+]]></output>
+              </test-case>
+              <test-case id="1210" name="SafeInvokeAction_DoesNotThrowException" fullname="TripleDot.Tests.Editor.SafeInvokeTests.SafeInvokeAction_DoesNotThrowException" methodname="SafeInvokeAction_DoesNotThrowException" classname="TripleDot.Tests.Editor.SafeInvokeTests" runstate="Runnable" seed="373906702" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.006998" asserts="0">
+                <properties />
+                <output><![CDATA[
+IgnoreFailingMessages:true
+Safe method invoked
+Exception: Dangerous method invoked
+TripleDot.Tests.Editor.SafeInvokeTests.DangerousMethod (System.Int32 value) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:90)
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+Rethrow as TargetInvocationException: Exception has been thrown by the target of an invocation.
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.MulticastDelegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvoke (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+TripleDot.ActionExtensions.SafeInvoke[T] (System.Action`1[T] action, T param) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:12)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+TripleDot.Tests.TestLogHandler:LogException(Exception, Object) (at Assets/Tests/TestLogHandler.cs:33)
+UnityEngine.Debug:LogException(Exception)
+TripleDot.ActionExtensions:SafeInvoke(Action`1, Int32) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:14)
+TripleDot.Tests.Editor.TestClassWithAction:SafeInvokeAction(Int32) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:17)
+TripleDot.Tests.Editor.SafeInvokeTests:<SafeInvokeAction_DoesNotThrowException>b__6_0() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:65)
+NUnit.Framework.Constraints.VoidInvocationDescriptor:Invoke()
+NUnit.Framework.Constraints.ExceptionInterceptor:Intercept(Object)
+NUnit.Framework.Constraints.ThrowsNothingConstraint:ApplyTo(Object)
+NUnit.Framework.Assert:That(Object, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:That(TestDelegate, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate)
+TripleDot.Tests.Editor.SafeInvokeTests:SafeInvokeAction_DoesNotThrowException() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:65)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+NUnit.Framework.Internal.Reflect:InvokeMethod(MethodInfo, Object, Object[])
+NUnit.Framework.Internal.MethodWrapper:Invoke(Object, Object[])
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:Execute(ITestExecutionContext)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions() (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorApplication.cs:327)
+
+Safe method after dangerous invoked
+]]></output>
+              </test-case>
+              <test-case id="1211" name="SafeInvokeAction_LogException" fullname="TripleDot.Tests.Editor.SafeInvokeTests.SafeInvokeAction_LogException" methodname="SafeInvokeAction_LogException" classname="TripleDot.Tests.Editor.SafeInvokeTests" runstate="Runnable" seed="1119275670" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.005165" asserts="0">
+                <properties />
+                <output><![CDATA[
+IgnoreFailingMessages:true
+Safe method invoked
+Exception: Dangerous method invoked
+TripleDot.Tests.Editor.SafeInvokeTests.DangerousMethod (System.Int32 value) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:90)
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+Rethrow as TargetInvocationException: Exception has been thrown by the target of an invocation.
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.MulticastDelegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvoke (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+TripleDot.ActionExtensions.SafeInvoke[T] (System.Action`1[T] action, T param) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:12)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+TripleDot.Tests.TestLogHandler:LogException(Exception, Object) (at Assets/Tests/TestLogHandler.cs:33)
+UnityEngine.Debug:LogException(Exception)
+TripleDot.ActionExtensions:SafeInvoke(Action`1, Int32) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:14)
+TripleDot.Tests.Editor.TestClassWithAction:SafeInvokeAction(Int32) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:17)
+TripleDot.Tests.Editor.SafeInvokeTests:<SafeInvokeAction_LogException>b__7_0() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:71)
+TripleDot.Tests.LogExceptionAssert:Throws(Action) (at Assets/Tests/LogExceptionAssert.cs:17)
+TripleDot.Tests.Editor.SafeInvokeTests:SafeInvokeAction_LogException() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:71)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+NUnit.Framework.Internal.Reflect:InvokeMethod(MethodInfo, Object, Object[])
+NUnit.Framework.Internal.MethodWrapper:Invoke(Object, Object[])
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:Execute(ITestExecutionContext)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions() (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorApplication.cs:327)
+
+Safe method after dangerous invoked
+]]></output>
+              </test-case>
+              <test-case id="1212" name="SafeInvokeFewTimes_DoesntThrowExceptions" fullname="TripleDot.Tests.Editor.SafeInvokeTests.SafeInvokeFewTimes_DoesntThrowExceptions" methodname="SafeInvokeFewTimes_DoesntThrowExceptions" classname="TripleDot.Tests.Editor.SafeInvokeTests" runstate="Runnable" seed="192397810" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.040970" asserts="0">
+                <properties />
+                <output><![CDATA[
+IgnoreFailingMessages:true
+Safe method invoked
+Exception: Dangerous method invoked
+TripleDot.Tests.Editor.SafeInvokeTests.DangerousMethod (System.Int32 value) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:90)
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+Rethrow as TargetInvocationException: Exception has been thrown by the target of an invocation.
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.MulticastDelegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvoke (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+TripleDot.ActionExtensions.SafeInvoke[T] (System.Action`1[T] action, T param) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:12)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+TripleDot.Tests.TestLogHandler:LogException(Exception, Object) (at Assets/Tests/TestLogHandler.cs:33)
+UnityEngine.Debug:LogException(Exception)
+TripleDot.ActionExtensions:SafeInvoke(Action`1, Int32) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:14)
+TripleDot.Tests.Editor.TestClassWithAction:SafeInvokeAction(Int32) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:17)
+TripleDot.Tests.Editor.<>c__DisplayClass8_0:<SafeInvokeFewTimes_DoesntThrowExceptions>b__0() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:79)
+NUnit.Framework.Constraints.VoidInvocationDescriptor:Invoke()
+NUnit.Framework.Constraints.ExceptionInterceptor:Intercept(Object)
+NUnit.Framework.Constraints.ThrowsNothingConstraint:ApplyTo(Object)
+NUnit.Framework.Assert:That(Object, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:That(TestDelegate, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate)
+TripleDot.Tests.Editor.SafeInvokeTests:SafeInvokeFewTimes_DoesntThrowExceptions() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:79)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+NUnit.Framework.Internal.Reflect:InvokeMethod(MethodInfo, Object, Object[])
+NUnit.Framework.Internal.MethodWrapper:Invoke(Object, Object[])
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:Execute(ITestExecutionContext)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions() (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorApplication.cs:327)
+
+Safe method after dangerous invoked
+Safe method invoked
+Exception: Dangerous method invoked
+TripleDot.Tests.Editor.SafeInvokeTests.DangerousMethod (System.Int32 value) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:90)
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+Rethrow as TargetInvocationException: Exception has been thrown by the target of an invocation.
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.MulticastDelegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvoke (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+TripleDot.ActionExtensions.SafeInvoke[T] (System.Action`1[T] action, T param) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:12)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+TripleDot.Tests.TestLogHandler:LogException(Exception, Object) (at Assets/Tests/TestLogHandler.cs:33)
+UnityEngine.Debug:LogException(Exception)
+TripleDot.ActionExtensions:SafeInvoke(Action`1, Int32) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:14)
+TripleDot.Tests.Editor.TestClassWithAction:SafeInvokeAction(Int32) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:17)
+TripleDot.Tests.Editor.<>c__DisplayClass8_0:<SafeInvokeFewTimes_DoesntThrowExceptions>b__0() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:79)
+NUnit.Framework.Constraints.VoidInvocationDescriptor:Invoke()
+NUnit.Framework.Constraints.ExceptionInterceptor:Intercept(Object)
+NUnit.Framework.Constraints.ThrowsNothingConstraint:ApplyTo(Object)
+NUnit.Framework.Assert:That(Object, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:That(TestDelegate, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate)
+TripleDot.Tests.Editor.SafeInvokeTests:SafeInvokeFewTimes_DoesntThrowExceptions() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:79)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+NUnit.Framework.Internal.Reflect:InvokeMethod(MethodInfo, Object, Object[])
+NUnit.Framework.Internal.MethodWrapper:Invoke(Object, Object[])
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:Execute(ITestExecutionContext)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions() (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorApplication.cs:327)
+
+Safe method after dangerous invoked
+Safe method invoked
+Exception: Dangerous method invoked
+TripleDot.Tests.Editor.SafeInvokeTests.DangerousMethod (System.Int32 value) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:90)
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+Rethrow as TargetInvocationException: Exception has been thrown by the target of an invocation.
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.MulticastDelegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvoke (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+TripleDot.ActionExtensions.SafeInvoke[T] (System.Action`1[T] action, T param) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:12)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+TripleDot.Tests.TestLogHandler:LogException(Exception, Object) (at Assets/Tests/TestLogHandler.cs:33)
+UnityEngine.Debug:LogException(Exception)
+TripleDot.ActionExtensions:SafeInvoke(Action`1, Int32) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:14)
+TripleDot.Tests.Editor.TestClassWithAction:SafeInvokeAction(Int32) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:17)
+TripleDot.Tests.Editor.<>c__DisplayClass8_0:<SafeInvokeFewTimes_DoesntThrowExceptions>b__0() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:79)
+NUnit.Framework.Constraints.VoidInvocationDescriptor:Invoke()
+NUnit.Framework.Constraints.ExceptionInterceptor:Intercept(Object)
+NUnit.Framework.Constraints.ThrowsNothingConstraint:ApplyTo(Object)
+NUnit.Framework.Assert:That(Object, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:That(TestDelegate, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate)
+TripleDot.Tests.Editor.SafeInvokeTests:SafeInvokeFewTimes_DoesntThrowExceptions() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:79)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+NUnit.Framework.Internal.Reflect:InvokeMethod(MethodInfo, Object, Object[])
+NUnit.Framework.Internal.MethodWrapper:Invoke(Object, Object[])
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:Execute(ITestExecutionContext)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions() (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorApplication.cs:327)
+
+Safe method after dangerous invoked
+Safe method invoked
+Exception: Dangerous method invoked
+TripleDot.Tests.Editor.SafeInvokeTests.DangerousMethod (System.Int32 value) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:90)
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+Rethrow as TargetInvocationException: Exception has been thrown by the target of an invocation.
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.MulticastDelegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvoke (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+TripleDot.ActionExtensions.SafeInvoke[T] (System.Action`1[T] action, T param) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:12)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+TripleDot.Tests.TestLogHandler:LogException(Exception, Object) (at Assets/Tests/TestLogHandler.cs:33)
+UnityEngine.Debug:LogException(Exception)
+TripleDot.ActionExtensions:SafeInvoke(Action`1, Int32) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:14)
+TripleDot.Tests.Editor.TestClassWithAction:SafeInvokeAction(Int32) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:17)
+TripleDot.Tests.Editor.<>c__DisplayClass8_0:<SafeInvokeFewTimes_DoesntThrowExceptions>b__0() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:79)
+NUnit.Framework.Constraints.VoidInvocationDescriptor:Invoke()
+NUnit.Framework.Constraints.ExceptionInterceptor:Intercept(Object)
+NUnit.Framework.Constraints.ThrowsNothingConstraint:ApplyTo(Object)
+NUnit.Framework.Assert:That(Object, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:That(TestDelegate, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate)
+TripleDot.Tests.Editor.SafeInvokeTests:SafeInvokeFewTimes_DoesntThrowExceptions() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:79)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+NUnit.Framework.Internal.Reflect:InvokeMethod(MethodInfo, Object, Object[])
+NUnit.Framework.Internal.MethodWrapper:Invoke(Object, Object[])
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:Execute(ITestExecutionContext)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions() (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorApplication.cs:327)
+
+Safe method after dangerous invoked
+Safe method invoked
+Exception: Dangerous method invoked
+TripleDot.Tests.Editor.SafeInvokeTests.DangerousMethod (System.Int32 value) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:90)
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+Rethrow as TargetInvocationException: Exception has been thrown by the target of an invocation.
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.MulticastDelegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvoke (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+TripleDot.ActionExtensions.SafeInvoke[T] (System.Action`1[T] action, T param) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:12)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+TripleDot.Tests.TestLogHandler:LogException(Exception, Object) (at Assets/Tests/TestLogHandler.cs:33)
+UnityEngine.Debug:LogException(Exception)
+TripleDot.ActionExtensions:SafeInvoke(Action`1, Int32) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:14)
+TripleDot.Tests.Editor.TestClassWithAction:SafeInvokeAction(Int32) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:17)
+TripleDot.Tests.Editor.<>c__DisplayClass8_0:<SafeInvokeFewTimes_DoesntThrowExceptions>b__0() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:79)
+NUnit.Framework.Constraints.VoidInvocationDescriptor:Invoke()
+NUnit.Framework.Constraints.ExceptionInterceptor:Intercept(Object)
+NUnit.Framework.Constraints.ThrowsNothingConstraint:ApplyTo(Object)
+NUnit.Framework.Assert:That(Object, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:That(TestDelegate, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate)
+TripleDot.Tests.Editor.SafeInvokeTests:SafeInvokeFewTimes_DoesntThrowExceptions() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:79)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+NUnit.Framework.Internal.Reflect:InvokeMethod(MethodInfo, Object, Object[])
+NUnit.Framework.Internal.MethodWrapper:Invoke(Object, Object[])
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:Execute(ITestExecutionContext)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions() (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorApplication.cs:327)
+
+Safe method after dangerous invoked
+Safe method invoked
+Exception: Dangerous method invoked
+TripleDot.Tests.Editor.SafeInvokeTests.DangerousMethod (System.Int32 value) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:90)
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+Rethrow as TargetInvocationException: Exception has been thrown by the target of an invocation.
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.MulticastDelegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvoke (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+TripleDot.ActionExtensions.SafeInvoke[T] (System.Action`1[T] action, T param) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:12)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+TripleDot.Tests.TestLogHandler:LogException(Exception, Object) (at Assets/Tests/TestLogHandler.cs:33)
+UnityEngine.Debug:LogException(Exception)
+TripleDot.ActionExtensions:SafeInvoke(Action`1, Int32) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:14)
+TripleDot.Tests.Editor.TestClassWithAction:SafeInvokeAction(Int32) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:17)
+TripleDot.Tests.Editor.<>c__DisplayClass8_0:<SafeInvokeFewTimes_DoesntThrowExceptions>b__0() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:79)
+NUnit.Framework.Constraints.VoidInvocationDescriptor:Invoke()
+NUnit.Framework.Constraints.ExceptionInterceptor:Intercept(Object)
+NUnit.Framework.Constraints.ThrowsNothingConstraint:ApplyTo(Object)
+NUnit.Framework.Assert:That(Object, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:That(TestDelegate, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate)
+TripleDot.Tests.Editor.SafeInvokeTests:SafeInvokeFewTimes_DoesntThrowExceptions() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:79)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+NUnit.Framework.Internal.Reflect:InvokeMethod(MethodInfo, Object, Object[])
+NUnit.Framework.Internal.MethodWrapper:Invoke(Object, Object[])
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:Execute(ITestExecutionContext)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions() (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorApplication.cs:327)
+
+Safe method after dangerous invoked
+Safe method invoked
+Exception: Dangerous method invoked
+TripleDot.Tests.Editor.SafeInvokeTests.DangerousMethod (System.Int32 value) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:90)
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+Rethrow as TargetInvocationException: Exception has been thrown by the target of an invocation.
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.MulticastDelegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvoke (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+TripleDot.ActionExtensions.SafeInvoke[T] (System.Action`1[T] action, T param) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:12)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+TripleDot.Tests.TestLogHandler:LogException(Exception, Object) (at Assets/Tests/TestLogHandler.cs:33)
+UnityEngine.Debug:LogException(Exception)
+TripleDot.ActionExtensions:SafeInvoke(Action`1, Int32) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:14)
+TripleDot.Tests.Editor.TestClassWithAction:SafeInvokeAction(Int32) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:17)
+TripleDot.Tests.Editor.<>c__DisplayClass8_0:<SafeInvokeFewTimes_DoesntThrowExceptions>b__0() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:79)
+NUnit.Framework.Constraints.VoidInvocationDescriptor:Invoke()
+NUnit.Framework.Constraints.ExceptionInterceptor:Intercept(Object)
+NUnit.Framework.Constraints.ThrowsNothingConstraint:ApplyTo(Object)
+NUnit.Framework.Assert:That(Object, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:That(TestDelegate, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate)
+TripleDot.Tests.Editor.SafeInvokeTests:SafeInvokeFewTimes_DoesntThrowExceptions() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:79)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+NUnit.Framework.Internal.Reflect:InvokeMethod(MethodInfo, Object, Object[])
+NUnit.Framework.Internal.MethodWrapper:Invoke(Object, Object[])
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:Execute(ITestExecutionContext)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions() (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorApplication.cs:327)
+
+Safe method after dangerous invoked
+Safe method invoked
+Exception: Dangerous method invoked
+TripleDot.Tests.Editor.SafeInvokeTests.DangerousMethod (System.Int32 value) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:90)
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+Rethrow as TargetInvocationException: Exception has been thrown by the target of an invocation.
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.MulticastDelegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvoke (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+TripleDot.ActionExtensions.SafeInvoke[T] (System.Action`1[T] action, T param) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:12)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+TripleDot.Tests.TestLogHandler:LogException(Exception, Object) (at Assets/Tests/TestLogHandler.cs:33)
+UnityEngine.Debug:LogException(Exception)
+TripleDot.ActionExtensions:SafeInvoke(Action`1, Int32) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:14)
+TripleDot.Tests.Editor.TestClassWithAction:SafeInvokeAction(Int32) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:17)
+TripleDot.Tests.Editor.<>c__DisplayClass8_0:<SafeInvokeFewTimes_DoesntThrowExceptions>b__0() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:79)
+NUnit.Framework.Constraints.VoidInvocationDescriptor:Invoke()
+NUnit.Framework.Constraints.ExceptionInterceptor:Intercept(Object)
+NUnit.Framework.Constraints.ThrowsNothingConstraint:ApplyTo(Object)
+NUnit.Framework.Assert:That(Object, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:That(TestDelegate, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate)
+TripleDot.Tests.Editor.SafeInvokeTests:SafeInvokeFewTimes_DoesntThrowExceptions() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:79)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+NUnit.Framework.Internal.Reflect:InvokeMethod(MethodInfo, Object, Object[])
+NUnit.Framework.Internal.MethodWrapper:Invoke(Object, Object[])
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:Execute(ITestExecutionContext)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions() (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorApplication.cs:327)
+
+Safe method after dangerous invoked
+Safe method invoked
+Exception: Dangerous method invoked
+TripleDot.Tests.Editor.SafeInvokeTests.DangerousMethod (System.Int32 value) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:90)
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+Rethrow as TargetInvocationException: Exception has been thrown by the target of an invocation.
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.MulticastDelegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvoke (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+TripleDot.ActionExtensions.SafeInvoke[T] (System.Action`1[T] action, T param) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:12)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+TripleDot.Tests.TestLogHandler:LogException(Exception, Object) (at Assets/Tests/TestLogHandler.cs:33)
+UnityEngine.Debug:LogException(Exception)
+TripleDot.ActionExtensions:SafeInvoke(Action`1, Int32) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:14)
+TripleDot.Tests.Editor.TestClassWithAction:SafeInvokeAction(Int32) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:17)
+TripleDot.Tests.Editor.<>c__DisplayClass8_0:<SafeInvokeFewTimes_DoesntThrowExceptions>b__0() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:79)
+NUnit.Framework.Constraints.VoidInvocationDescriptor:Invoke()
+NUnit.Framework.Constraints.ExceptionInterceptor:Intercept(Object)
+NUnit.Framework.Constraints.ThrowsNothingConstraint:ApplyTo(Object)
+NUnit.Framework.Assert:That(Object, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:That(TestDelegate, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate)
+TripleDot.Tests.Editor.SafeInvokeTests:SafeInvokeFewTimes_DoesntThrowExceptions() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:79)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+NUnit.Framework.Internal.Reflect:InvokeMethod(MethodInfo, Object, Object[])
+NUnit.Framework.Internal.MethodWrapper:Invoke(Object, Object[])
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:Execute(ITestExecutionContext)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions() (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorApplication.cs:327)
+
+Safe method after dangerous invoked
+Safe method invoked
+Exception: Dangerous method invoked
+TripleDot.Tests.Editor.SafeInvokeTests.DangerousMethod (System.Int32 value) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:90)
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+Rethrow as TargetInvocationException: Exception has been thrown by the target of an invocation.
+System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.MulticastDelegate.DynamicInvokeImpl (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+System.Delegate.DynamicInvoke (System.Object[] args) (at <695d1cc93cca45069c528c15c9fdd749>:0)
+TripleDot.ActionExtensions.SafeInvoke[T] (System.Action`1[T] action, T param) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:12)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+TripleDot.Tests.TestLogHandler:LogException(Exception, Object) (at Assets/Tests/TestLogHandler.cs:33)
+UnityEngine.Debug:LogException(Exception)
+TripleDot.ActionExtensions:SafeInvoke(Action`1, Int32) (at Assets/Package/Scripts/Utils/ActionExtensions.cs:14)
+TripleDot.Tests.Editor.TestClassWithAction:SafeInvokeAction(Int32) (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:17)
+TripleDot.Tests.Editor.<>c__DisplayClass8_0:<SafeInvokeFewTimes_DoesntThrowExceptions>b__0() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:79)
+NUnit.Framework.Constraints.VoidInvocationDescriptor:Invoke()
+NUnit.Framework.Constraints.ExceptionInterceptor:Intercept(Object)
+NUnit.Framework.Constraints.ThrowsNothingConstraint:ApplyTo(Object)
+NUnit.Framework.Assert:That(Object, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:That(TestDelegate, IResolveConstraint, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate, String, Object[])
+NUnit.Framework.Assert:DoesNotThrow(TestDelegate)
+TripleDot.Tests.Editor.SafeInvokeTests:SafeInvokeFewTimes_DoesntThrowExceptions() (at Assets/Tests/Editor/Utils/SafeInvokeTests.cs:79)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+NUnit.Framework.Internal.Reflect:InvokeMethod(MethodInfo, Object, Object[])
+NUnit.Framework.Internal.MethodWrapper:Invoke(Object, Object[])
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunNonAsyncTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:RunTestMethod(ITestExecutionContext)
+NUnit.Framework.Internal.Commands.TestMethodCommand:Execute(ITestExecutionContext)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions() (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorApplication.cs:327)
+
+Safe method after dangerous invoked
+]]></output>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1180" name="StatTests" fullname="TripleDot.Tests.Editor.StatTests" classname="TripleDot.Tests.Editor.StatTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.174706" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1181" name="DeserializeFromVersion5_ParseCorrectly" fullname="TripleDot.Tests.Editor.StatTests.DeserializeFromVersion5_ParseCorrectly" methodname="DeserializeFromVersion5_ParseCorrectly" classname="TripleDot.Tests.Editor.StatTests" runstate="Runnable" seed="1676623465" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.096932" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1182" name="DeserializeFromVersion6_ParseCorrectly" fullname="TripleDot.Tests.Editor.StatTests.DeserializeFromVersion6_ParseCorrectly" methodname="DeserializeFromVersion6_ParseCorrectly" classname="TripleDot.Tests.Editor.StatTests" runstate="Runnable" seed="1195095803" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.013765" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1184" name="DeserializeFromVersion7_JsonNotNull" fullname="TripleDot.Tests.Editor.StatTests.DeserializeFromVersion7_JsonNotNull" methodname="DeserializeFromVersion7_JsonNotNull" classname="TripleDot.Tests.Editor.StatTests" runstate="Runnable" seed="838119454" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.003024" asserts="0">
+                <properties />
+              </test-case>
+              <test-case id="1183" name="DeserializeFromVersion7_ParseCorrectly" fullname="TripleDot.Tests.Editor.StatTests.DeserializeFromVersion7_ParseCorrectly" methodname="DeserializeFromVersion7_ParseCorrectly" classname="TripleDot.Tests.Editor.StatTests" runstate="Runnable" seed="1877045429" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.046397" asserts="0">
+                <properties />
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1185" name="UnityHttpClientTests" fullname="TripleDot.Tests.Editor.UnityHttpClientTests" classname="TripleDot.Tests.Editor.UnityHttpClientTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.064609" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1186" name="GetQueryTest" fullname="TripleDot.Tests.Editor.UnityHttpClientTests.GetQueryTest" methodname="GetQueryTest" classname="TripleDot.Tests.Editor.UnityHttpClientTests" runstate="Runnable" seed="1545625912" result="Passed" start-time="2023-05-19 10:51:25Z" end-time="2023-05-19 10:51:25Z" duration="0.053440" asserts="0">
+                <properties />
+              </test-case>
+            </test-suite>
           </test-suite>
-          <test-case id="1-1001" name="Passing_Test" fullname="DotnetTests.XUnitTests.CalculatorTests.Passing_Test" methodname="Passing_Test" classname="DotnetTests.XUnitTests.CalculatorTests" runstate="Runnable" seed="550330290" result="Passed" start-time="2021-06-28T20:23:41.5260365Z" end-time="2021-06-28T20:23:41.5262756Z" duration="0.000238" asserts="1" />
-          <test-case id="1-1002" name="Passing_Test_With_Description" fullname="DotnetTests.XUnitTests.CalculatorTests.Passing_Test_With_Description" methodname="Passing_Test_With_Description" classname="DotnetTests.XUnitTests.CalculatorTests" runstate="Runnable" seed="1693317298" result="Passed" start-time="2021-06-28T20:23:41.5263998Z" end-time="2021-06-28T20:23:41.5265354Z" duration="0.000135" asserts="1">
-            <properties>
-              <property name="Description" value="Some description" />
-            </properties>
-          </test-case>
-          <test-case id="1-1007" name="Skipped_Test" fullname="DotnetTests.XUnitTests.CalculatorTests.Skipped_Test" methodname="Skipped_Test" classname="DotnetTests.XUnitTests.CalculatorTests" runstate="Ignored" seed="1512653931" result="Skipped" label="Ignored" start-time="2021-06-28T20:23:41.5265550Z" end-time="2021-06-28T20:23:41.5269525Z" duration="0.000398" asserts="0">
-            <properties>
-              <property name="_SKIPREASON" value="Skipped" />
-            </properties>
-            <reason>
-              <message><![CDATA[Skipped]]></message>
-            </reason>
-          </test-case>
-          <test-case id="1-1006" name="Timeout_Test" fullname="DotnetTests.XUnitTests.CalculatorTests.Timeout_Test" methodname="Timeout_Test" classname="DotnetTests.XUnitTests.CalculatorTests" runstate="Runnable" seed="258810529" result="Failed" label="Test exceeded Timeout value 1ms." start-time="2021-06-28T20:23:41.5269651Z" end-time="2021-06-28T20:23:41.5419118Z" duration="0.014949" asserts="0">
-            <properties>
-              <property name="Timeout" value="1" />
-            </properties>
-            <failure />
-          </test-case>
         </test-suite>
       </test-suite>
     </test-suite>

@@ -765,14 +765,17 @@ class DotNetNunitParser {
             return;
         }
         for (const suite of testSuites) {
+            if (suite.$.type == 'ParameterizedMethod') {
+                suite.$.name = suitePath[suitePath.length - 1].$.name + " > " + suite.$.name;
+            }
             suitePath.push(suite);
-            this.populateTestCasesRecursive(result, suitePath, suite['test-suite']);
             const testcases = suite['test-case'];
             if (testcases !== undefined) {
                 for (const testcase of testcases) {
                     this.addTestCase(result, suitePath, testcase);
                 }
             }
+            this.populateTestCasesRecursive(result, suitePath, suite['test-suite']);
             suitePath.pop();
         }
     }
@@ -780,12 +783,12 @@ class DotNetNunitParser {
         // The last suite in the suite path is the "group".
         // The rest are concatenated together to form the "suite".
         // But ignore "Theory" suites.
-        const suitesWithoutTheories = suitePath.filter(suite => suite.$.type !== 'Theory');
+        const suitesWithoutTheories = suitePath.filter(suite => suite.$.type !== 'Theory' && suite.$.type !== 'ParameterizedMethod');
         const suiteName = suitesWithoutTheories
             .slice(0, suitesWithoutTheories.length - 1)
             .map(suite => suite.$.name)
             .join('.');
-        const groupName = suitesWithoutTheories[suitesWithoutTheories.length - 1].$.name;
+        const groupName = suitePath[suitePath.length - 1].$.name;
         let existingSuite = result.find(existingSuite => existingSuite.name === suiteName);
         if (existingSuite === undefined) {
             existingSuite = new test_results_1.TestSuiteResult(suiteName, []);
